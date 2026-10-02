@@ -1,15 +1,16 @@
 import time
 import random
 
-def randomx(randomx):
-     choice_type = random.choice(["int", "bool"])
-     if choice_type == int:
-          random.randint(1, 50000)
-     else:
-          
-     
 
-x = randomx
+def randomx():
+     choice_type = random.choice(["int", "bool"])
+
+     if choice_type == int:
+          return random.randint(1, 10)
+     else:
+          return random.choice([True, False])
+          
+x = randomx()
 
 def tru(tru):
     print("X is true.")
@@ -28,4 +29,4 @@ if x != False and x != True:
      time.sleep(.5)
      print("therefore, x is " + str(x))
 
-# 9/18/26
+# 9/22/26
